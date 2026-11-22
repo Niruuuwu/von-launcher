@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <TextView
+        style="@style/TextSmallBold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/mindful_delay"
+        android:textColor="?attr/primaryColor" />
+
+    <TextView
+        style="@style/TextSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:alpha="0.7"
+        android:text="Pause before opening to prevent mindless clicks"
+        android:textColor="?attr/primaryColor"
+        android:textSize="12sp" />
+
+    <RadioGroup
+        android:id="@+id/rgDelay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rbDelay0"
+            style="@style/TextSmall"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/off"
+            android:textColor="?attr/primaryColor" />
+
+        <RadioButton
+            android:id="@+id/rbDelay5"
+            style="@style/TextSmall"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="5s"
+            android:textColor="?attr/primaryColor" />
+
+        <RadioButton
+            android:id="@+id/rbDelay10"
+            style="@style/TextSmall"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="10s"
+            android:textColor="?attr/primaryColor" />
+
+        <RadioButton
+            android:id="@+id/rbDelay15"
+            style="@style/TextSmall"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="15s"
+            android:textColor="?attr/primaryColor" />
+
+    </RadioGroup>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginVertical="16dp"
+        android:alpha="0.2"
+        android:background="?attr/primaryColor" />
+
+    <TextView
+        style="@style/TextSmallBold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/session_limit"
+        android:textColor="?attr/primaryColor" />
+
+    <TextView
+        style="@style/TextSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:alpha="0.7"
+        android:text="Timer duration when the app is opened"
+        android:textColor="?attr/primaryColor"
+        android:textSize="12sp" />
+
+    <RadioGroup
+        android:id="@+id/rgLimitRow1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rbLimit0"
+            style="@style/TextSmall"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/off"
+            android:textColor="?attr/primaryColor" />
+
+        <RadioButton
+            android:id="@+id/rbLimit5"
+            style="@style/TextSmall"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="5m"
+            android:textColor="?attr/primaryColor" />
+
+        <RadioButton
+            android:id="@+id/rbLimit10"
+            style="@style/TextSmall"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="10m"
+            android:textColor="?attr/primaryColor" />
+
+        <RadioButton
+            android:id="@+id/rbLimit15"
+            style="@style/TextSmall"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="15m"
+            android:textColor="?attr/primaryColor" />
+
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/rgLimitRow2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rbLimit20"
+            style="@style/TextSmall"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="20m"
+            android:textColor="?attr/primaryColor" />
+
+        <RadioButton
+            android:id="@+id/rbLimit30"
+            style="@style/TextSmall"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="30m"
+            android:textColor="?attr/primaryColor" />
+
+        <RadioButton
+            android:id="@+id/rbLimit45"
+            style="@style/TextSmall"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="45m"
+            android:textColor="?attr/primaryColor" />
+
+        <RadioButton
+            android:id="@+id/rbLimit60"
+            style="@style/TextSmall"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="60m"
+            android:textColor="?attr/primaryColor" />
+
+    </RadioGroup>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginVertical="16dp"
+        android:alpha="0.2"
+        android:background="?attr/primaryColor" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/TextSmall"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/floating_timer_badge"
+            android:textColor="?attr/primaryColor" />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/swFloatingBadge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true" />
+
+    </LinearLayout>
+
+</LinearLayout>
